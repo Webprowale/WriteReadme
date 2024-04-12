@@ -1,6 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "../../App";
 import EditTemplate from "../EditTemplate";
+import Error from "../Error";
+
 
  export const router = createBrowserRouter([
     {
@@ -8,7 +10,11 @@ import EditTemplate from "../EditTemplate";
         element: <App />,
     },
     {
-        path: '/edit',
+        path: '/edit/:projectName',
         element: <EditTemplate />,
     },
+    {
+        path: '*',
+        element: <Error />,
+    }
  ])

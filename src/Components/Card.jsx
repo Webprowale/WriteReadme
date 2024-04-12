@@ -19,12 +19,8 @@ const Card = () => {
             <h5 className="card-title fw-bold fs-4 mt-4">{item.projectName}</h5>
             <p className="card-text lead fs-6">{item.description}</p>
             <Link
-              
+              to={`/edit/${item.projectName}`}
               className="card-link text-primary"
-              onClick={() => {
-                sessionStorage.setItem("editContent", JSON.stringify(item));
-                navigate("/edit")
-              }}
             >
               Edit template
             </Link>

@@ -37,4 +37,12 @@
     .heroT{
       font-size: 3rem !important;
     }
+    .textS{
+      font-size: 2.8rem !important;
+    }
+    .pattern{
+      --s: 15px;
+      --g :3px; 
+      width: calc(2*(1.353*var(--s) + var(--g)));
+    }
   }

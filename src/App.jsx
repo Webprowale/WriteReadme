@@ -14,10 +14,7 @@ function App() {
     }
   };
   return (
-    <div
-      className="container-fluid px-2 pt-5"
-      style={{ backgroundColor: "#ECEEEF" }}
-    >
+    <>
       <Hero>
         <div className="d-flex justify-content-center ">
           <FaCircleArrowDown
@@ -35,7 +32,7 @@ function App() {
       <div className="row p-2 mx-auto justify-content-center align-items-center" style={{gap:"2rem"}}>
         <Card />
       </div>
-    </div>
+    </>
   );
 }
 
